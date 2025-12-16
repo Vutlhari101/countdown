@@ -2,6 +2,8 @@ body {
     background-color: beige;
 }
 
+
+
 div {
     display: flex;
     justify-content: center;
@@ -14,6 +16,7 @@ div {
 }
 
 .container {
+    box-sizing: border-box;
     width: 500px;
     height: 500px;
     background-color: peachpuff;
@@ -22,9 +25,16 @@ div {
     font-weight: 1000;
     font-size:large;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    flex-grow: 1;
+    flex-grow: 0;
+    flex-shrink: 1;
     overflow: hidden;
     flex-direction: column;
+}
+@media (max-width: 400px) {
+    .container {
+        width: 340px;
+        margin: auto;
+    }
 }
 
 .container:hover {
