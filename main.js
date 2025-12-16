@@ -15,10 +15,24 @@ function getDateDiff(destDate, today){
     return diffDate;
 }
 
+//next meeting
 const destDate = new Date(2026, 1, 13)
+
+//today
 const currDate = new Date()
 
+//anniversary date
+const anniversary = new Date(2025, 10, 14)
+
 const daysUntil = getDateDiff(destDate, currDate)
-const strDaysremaining = `There are ${daysUntil} days remaining til we see each other again`
+const strDaysremaining = `${daysUntil} days until we see each other \n`
 var time = document.getElementById('time')
 time.textContent = strDaysremaining
+
+const daysdating = `Together for ${getDateDiff(new Date, anniversary)} days`
+var daystogether = document.getElementById('together')
+daystogether.textContent = daysdating
+
+var datestarted = document.getElementById('since')
+datestarted.textContent = `Together since {${anniversary.toDateString().substring(3)}}`
+datestarted.style.color = "green"
