@@ -34,5 +34,4 @@ var daystogether = document.getElementById('together')
 daystogether.textContent = daysdating
 
 var datestarted = document.getElementById('since')
-datestarted.textContent = `Together since {${anniversary.toDateString().substring(3)}}`
-datestarted.style.color = "green"
+datestarted.textContent = `Since ${anniversary.toLocaleDateString()}`
