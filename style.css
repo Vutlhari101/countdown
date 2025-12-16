@@ -1,0 +1,40 @@
+body {
+    background-color: beige;
+}
+
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.title {
+    flex-direction: column;
+}
+
+.container {
+    width: 500px;
+    height: 500px;
+    background-color: peachpuff;
+    color: #000;
+    text-align: center;
+    font-weight: 1000;
+    font-size:large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    flex-grow: 1;
+    overflow: hidden;
+    flex-direction: column;
+}
+
+.container:hover {
+    opacity: 1;
+    background-image: url(media/img1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+
+#time {
+    font-size: xx-large;
+}
