@@ -1,6 +1,6 @@
 // CONFIGURATION
 const startDate = new Date("2025-11-14T00:00:00");
-const photoList = ['media/img1.jpg']; // Add your actual image names here
+const photoList = ['media/img1.jpg', 'media/img2.jpg']; // Add your actual image names here
 
 function updateAllTimers() {
     const now = new Date();
